@@ -25,7 +25,7 @@
         e.preventDefault();
         $.ajax({
             type: 'POST',
-            url: 'http://ajax.frontend.itheima.net/api/reguser',
+            url: '/api/reguser',
             data: {
                 username: $('#reg-form [name=username]').val(),
                 password: $('#reg-form [name=password]').val()
@@ -46,7 +46,7 @@
         e.preventDefault();
         $.ajax({
             method: 'POST',
-            url: 'http://ajax.frontend.itheima.net/api/login',
+            url: '/api/login',
             data: $(this).serialize(),//获取表单的所有属性
             success: function (res) {
                 if (res.status !== 0) {

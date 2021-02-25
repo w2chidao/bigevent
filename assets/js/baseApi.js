@@ -1,6 +1,6 @@
 $.ajaxPrefilter(function (option) {
     //统一
-    option.url = 'http://ajax.frontend.itheima.net' + option.url;
+    option.url = 'http://api-breakingnews-web.itheima.net' + option.url;
 
     //统一
     if (option.url.includes('/my')) {

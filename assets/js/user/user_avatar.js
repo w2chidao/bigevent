@@ -11,7 +11,7 @@ const options = {
 // 创建裁剪区域
 $image.cropper(options)
 
-$('.layui-btn').on('click', function () {
+$('#chooseImgBtn').on('click', function () {
     $('#file').click()
 })
 
